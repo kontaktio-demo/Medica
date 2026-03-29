@@ -1,7 +1,4 @@
-/* ===========================
-   MEDICA — Premium Medical Theme
-   Dark Navy / Turquoise
-   =========================== */
+
 
 :root {
   --navy-deep: #050814;
@@ -45,16 +42,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
 ::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--teal-bright); }
 
-/* Selection */
 ::selection { background: var(--teal); color: var(--navy-deep); }
 
-/* ===== PRELOADER ===== */
 .preloader {
   position: fixed;
   inset: 0;
@@ -87,7 +81,6 @@ body.loaded .preloader {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -167,7 +160,6 @@ body.loaded .preloader {
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ===== MOBILE NAV ===== */
 .mobile-nav {
   position: fixed;
   inset: 0;
@@ -193,7 +185,6 @@ body.loaded .preloader {
 }
 .mobile-nav a:hover { color: var(--teal); }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -241,7 +232,6 @@ body.loaded .preloader {
 }
 .btn-text:hover { gap: 8px; }
 
-/* ===== REVEAL ANIMATION ===== */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -252,7 +242,6 @@ body.loaded .preloader {
   transform: translateY(0);
 }
 
-/* ===== HERO ===== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -295,7 +284,6 @@ body.loaded .preloader {
   to { transform: translate(40px,-40px); }
 }
 
-/* Particles */
 .particle {
   position: absolute;
   border-radius: 50%;
@@ -314,7 +302,6 @@ body.loaded .preloader {
   50% { transform: translateY(-20px) scale(1.2); opacity: 0.25; }
 }
 
-/* Heartbeat ECG Line */
 .heartbeat-line {
   position: absolute;
   bottom: 80px;
@@ -421,7 +408,6 @@ body.loaded .preloader {
   color: var(--white-80);
 }
 
-/* Hero Card Mockup */
 .hero-card-mockup {
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(24px);
@@ -508,7 +494,6 @@ body.loaded .preloader {
   margin-top: 2px;
 }
 
-/* Hero Stats */
 .hero-stats {
   position: relative;
   z-index: 1;
@@ -560,7 +545,6 @@ body.loaded .preloader {
   margin: 0 8px;
 }
 
-/* Scroll Arrow */
 .scroll-arrow {
   position: absolute;
   bottom: 32px;
@@ -578,11 +562,10 @@ body.loaded .preloader {
   50% { transform: translateX(-50%) translateY(8px); }
 }
 
-/* ===== SECTIONS COMMON ===== */
 .section { padding: 100px 0; position: relative; }
 .section:nth-child(even) { background: var(--navy); }
 .section:nth-child(odd) { background: var(--navy-deep); }
-/* Override for specific sections */
+
 .services { background: var(--navy-mid) !important; }
 .how-it-works { background: var(--navy) !important; }
 .agent-section { background: var(--navy-mid) !important; }
@@ -621,7 +604,6 @@ body.loaded .preloader {
   margin-bottom: 60px;
 }
 
-/* ===== ABOUT ===== */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -655,7 +637,6 @@ body.loaded .preloader {
 }
 .about-feature-item p { font-size: 0.85rem; color: var(--white-60); margin: 0; }
 
-/* About stats card */
 .about-visual { display: flex; align-items: center; justify-content: center; }
 .about-stats-card {
   background: rgba(255,255,255,0.05);
@@ -699,7 +680,6 @@ body.loaded .preloader {
   font-weight: 600;
 }
 
-/* ===== SPECIALTY GRID ===== */
 .specialty-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -725,7 +705,6 @@ body.loaded .preloader {
 .specialty-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--white); }
 .specialty-card p { font-size: 0.85rem; color: var(--white-60); line-height: 1.6; flex: 1; }
 
-/* ===== TERMINY ===== */
 .terminy { background: var(--navy-deep) !important; }
 .appointments-list {
   display: flex;
@@ -792,7 +771,6 @@ body.loaded .preloader {
   box-shadow: var(--teal-glow);
 }
 
-/* ===== PRICING ===== */
 .pricing { background: var(--navy) !important; }
 .pricing-pkgs {
   display: grid;
@@ -847,7 +825,6 @@ body.loaded .preloader {
 }
 .pkg-features li { font-size: 0.87rem; color: var(--white-80); }
 
-/* ===== TEAM ===== */
 .team { background: var(--navy-deep) !important; }
 .team-grid {
   display: grid;
@@ -888,7 +865,6 @@ body.loaded .preloader {
 }
 .team-bio { font-size: 0.82rem; color: var(--white-60); line-height: 1.6; }
 
-/* ===== HOW IT WORKS ===== */
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -928,7 +904,6 @@ body.loaded .preloader {
 .step-item h3 { font-size: 1.1rem; font-weight: 700; color: var(--white); }
 .step-item p { font-size: 0.87rem; color: var(--white-60); line-height: 1.6; max-width: 280px; }
 
-/* ===== AGENT SECTION ===== */
 .agent-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -953,7 +928,6 @@ body.loaded .preloader {
 }
 .af-icon { font-size: 1.2rem; flex-shrink: 0; }
 
-/* Chat Mockup */
 .chat-mockup {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(20px);
@@ -1040,7 +1014,6 @@ body.loaded .preloader {
   justify-content: center;
 }
 
-/* ===== TESTIMONIALS ===== */
 .testimonials { background: var(--navy) !important; }
 .slider-wrapper {
   position: relative;
@@ -1129,7 +1102,6 @@ body.loaded .preloader {
   border-radius: 4px;
 }
 
-/* ===== CONTACT ===== */
 .contact { background: var(--navy-mid) !important; }
 .contact-grid {
   display: grid;
@@ -1176,7 +1148,6 @@ body.loaded .preloader {
 .opening-hours td:last-child { text-align: right; font-weight: 600; }
 .closed { color: var(--white-60); font-weight: 400 !important; font-style: italic; }
 
-/* Form */
 .contact-form-wrap {
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--white-10);
@@ -1222,7 +1193,6 @@ body.loaded .preloader {
 .form-group textarea { resize: vertical; min-height: 100px; }
 #contactForm .btn { width: 100%; margin-top: 8px; }
 
-/* ===== FOOTER ===== */
 .footer {
   background: var(--navy-deep);
   border-top: 1px solid rgba(44,228,198,0.15);
@@ -1260,7 +1230,6 @@ body.loaded .preloader {
 }
 .footer-bottom a { color: var(--teal); text-decoration: none; }
 
-/* ===== STICKY BAR ===== */
 .sticky-bar {
   position: fixed;
   bottom: 0; left: 0; right: 0;
@@ -1298,7 +1267,6 @@ body.loaded .preloader {
 }
 .sticky-close:hover { border-color: var(--teal); color: var(--teal); }
 
-/* ===== MOBILE CTA FIXED ===== */
 .mobile-cta-fixed {
   display: none;
   position: fixed;
@@ -1317,7 +1285,6 @@ body.loaded .preloader {
   white-space: nowrap;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1100px) {
   .specialty-grid { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1340,7 +1307,7 @@ body.loaded .preloader {
   .hero-right { width: 100%; max-width: 400px; }
   .hero-stats { padding: 16px 20px; }
   .stat-num { font-size: 1.6rem; }
-  .appt-row { grid-template-columns: 36px 1fr auto; gap: 10px; }
+  .appt-row { grid-template-columns: 36px 1fr auto auto; gap: 10px; }
   .appt-date, .appt-time { display: none; }
   .footer-top { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
@@ -1378,4 +1345,10 @@ body.loaded .preloader {
   .appt-row { grid-template-columns: 1fr auto; }
   .appt-icon { display: none; }
   .appt-type { display: none; }
+}
+
+@media (max-width: 768px) {
+  .sticky-bar.on ~ .mobile-cta-fixed {
+    display: none;
+  }
 }
