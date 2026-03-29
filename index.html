@@ -3,675 +3,719 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Salon Urody Róza - Profesjonalny Salon Beauty Warszawa</title>
-  <meta name="description" content="Salon Urody Róza w Warszawie. Manicure hybrydowy, stylizacja rzęs i brwi, makijaż okolicznościowy i zabiegi na twarz. Umów wizytę już dziś.">
-  <meta name="keywords" content="salon urody, salon beauty, manicure hybrydowy, pedicure, stylizacja rzęs, brwi, makijaż, zabiegi na twarz, Warszawa">
-  <meta name="author" content="Salon Urody Róza">
-  <meta property="og:title" content="Salon Urody Róza - Profesjonalny Salon Beauty Warszawa">
-  <meta property="og:description" content="Manicure hybrydowy, stylizacja rzęs i brwi, makijaż i zabiegi pielęgnacyjne w samym sercu Warszawy.">
+  <title>Przychodnia MEDICA — nowoczesna opieka medyczna w Łodzi</title>
+  <meta name="description" content="Przychodnia MEDICA w Łodzi. Internista, pediatra, ortopeda, dermatolog, ginekolog, kardiolog. Wizyty stacjonarne, teleporady i badania. Umów wizytę już dziś.">
+  <meta name="keywords" content="przychodnia, medica, łódź, internista, pediatra, ortopeda, dermatolog, ginekolog, kardiolog, teleporada">
+  <meta name="author" content="Przychodnia MEDICA">
+  <meta property="og:title" content="Przychodnia MEDICA — nowoczesna opieka medyczna w Łodzi">
+  <meta property="og:description" content="Nowoczesna przychodnia MEDICA w Łodzi — wizyty, badania i teleporady w jednym miejscu.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
 </head>
 <body>
 
-<div id="preloader">
-  <div class="loader-petal"></div>
-  <span>Salon Urody Róza&hellip;</span>
+<!-- Preloader -->
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">MEDICA</div>
+  </div>
 </div>
 
-<header class="navbar" id="navbar">
-  <div class="logo"><span>Salon Urody</span><strong>Róza</strong></div>
-
-  <nav class="nav-links">
-    <a href="#about">O nas</a>
-    <a href="#services">Usługi</a>
-    <a href="#gallery">Galeria</a>
-    <a href="#testimonials">Opinie</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
-
-  <a href="#contact" class="btn btn-primary btn-sm nav-cta">Umów wizytę</a>
-
-  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</header>
-
-<nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-  <a href="#about"        onclick="closeMobile()">O nas</a>
-  <a href="#services"     onclick="closeMobile()">Usługi</a>
-  <a href="#gallery"      onclick="closeMobile()">Galeria</a>
-  <a href="#testimonials" onclick="closeMobile()">Opinie</a>
-  <a href="#faq"          onclick="closeMobile()">FAQ</a>
-  <a href="#contact"      onclick="closeMobile()">Kontakt</a>
-  <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Umów wizytę</a>
+<!-- Navbar -->
+<nav id="navbar" class="navbar" role="navigation" aria-label="Nawigacja główna">
+  <div class="nav-container">
+    <a href="#" class="logo"><span>Przychodnia</span><strong>MEDICA</strong></a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">O nas</a></li>
+      <li><a href="#specjalizacje">Specjalizacje</a></li>
+      <li><a href="#terminy">Terminy</a></li>
+      <li><a href="#pricing">Cennik</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Umów wizytę</a>
+    <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
+<!-- Mobile Nav -->
+<div id="mobileNav" class="mobile-nav" aria-hidden="true" role="dialog" aria-label="Menu mobilne">
+  <ul role="list">
+    <li><a href="#about" onclick="closeMobile()">O nas</a></li>
+    <li><a href="#specjalizacje" onclick="closeMobile()">Specjalizacje</a></li>
+    <li><a href="#terminy" onclick="closeMobile()">Terminy</a></li>
+    <li><a href="#pricing" onclick="closeMobile()">Cennik</a></li>
+    <li><a href="#contact" onclick="closeMobile()">Kontakt</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Umów wizytę</a>
+</div>
+
+<!-- Hero -->
 <section id="hero" class="hero">
-  <div class="hero-bg" id="heroBg">
-    <img
-      src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80"
-      alt="Wnętrze Salonu Urody Róza - eleganckie i przytulne miejsce"
-      class="hero-img"
-      loading="eager"
-    >
-    <div class="hero-overlay"></div>
+  <div id="heroBg" class="hero-bg">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+    <svg class="heartbeat-line" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <polyline points="0,60 200,60 260,20 300,100 340,10 380,90 420,60 1200,60" class="ecg-line"/>
+    </svg>
   </div>
-
   <div class="hero-content">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      Salon urody w Warszawie
+    <div class="hero-left reveal">
+      <div class="hero-badge"><span class="dot pulse"></span>Przychodnia w Łodzi</div>
+      <h1>Twoje zdrowie.<br>Nasza<br><em>odpowiedzialność.</em></h1>
+      <p class="hero-sub">Nowoczesna przychodnia MEDICA w Łodzi — wizyty, badania i teleporady w jednym miejscu.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Umów wizytę</a>
+        <a href="#specjalizacje" class="btn btn-outline">Zobacz ofertę</a>
+      </div>
+      <div class="hero-badges">
+        <span class="hero-badge-pill">🤖 24/7 Asystent AI</span>
+        <span class="hero-badge-pill">💻 Teleporady</span>
+        <span class="hero-badge-pill">⚡ Krótkie terminy</span>
+      </div>
     </div>
-
-    <h1>Odkryj swoją<br>naturalną<br><em>piękność</em></h1>
-
-    <p class="hero-sub">
-      Zadbamy o Ciebie z dbałością o każdy detal. Manicure, rzęsy, brwi, makijaż i zabiegi pielęgnacyjne - wszystko w jednym, pięknym miejscu.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-white">Umów wizytę</a>
-      <a href="#services" class="btn btn-outline">Nasze usługi</a>
+    <div class="hero-right reveal">
+      <div class="hero-card-mockup">
+        <div class="card-mockup-header">
+          <div class="card-icon">🏥</div>
+          <div>
+            <div class="card-title">Panel Pacjenta</div>
+            <div class="card-sub">MEDICA Łódź</div>
+          </div>
+          <span class="card-status">● Aktywny</span>
+        </div>
+        <div class="card-mockup-body">
+          <div class="upcoming-visit">
+            <span class="visit-label">Najbliższa wizyta</span>
+            <div class="visit-info">
+              <span class="visit-doc">dr Marek Wiśniewski</span>
+              <span class="visit-spec">Internista</span>
+            </div>
+            <div class="visit-date">📅 30.03.2026 · 10:30</div>
+            <span class="visit-type-badge">Stacjonarna</span>
+          </div>
+          <div class="card-stats-row">
+            <div class="card-stat"><span class="cs-num">3</span><span class="cs-label">Wizyty w tym roku</span></div>
+            <div class="card-stat"><span class="cs-num">2</span><span class="cs-label">Badania w toku</span></div>
+            <div class="card-stat"><span class="cs-num">5★</span><span class="cs-label">Ocena usług</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="hero-stats">
+  <div class="hero-stats reveal">
     <div class="stat-item">
-      <span class="stat-num" data-target="1200">0</span>
-      <span class="stat-label">Zadowolonych klientek</span>
+      <span class="stat-num" data-target="5000">0</span>
+      <span class="stat-suffix">+</span>
+      <span class="stat-label">Pacjentów rocznie</span>
     </div>
+    <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num" data-target="8">0</span>
+      <span class="stat-num" data-target="15">0</span>
       <span class="stat-label">Lat doświadczenia</span>
     </div>
+    <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num" data-target="18">0</span>
-      <span class="stat-label">Usług premium</span>
+      <span class="stat-num" data-target="6">0</span>
+      <span class="stat-label">Specjalizacji</span>
     </div>
+    <div class="stat-divider"></div>
     <div class="stat-item">
       <span class="stat-num" data-target="4.9">0</span>
       <span class="stat-label">Średnia ocena</span>
     </div>
   </div>
-
-  <div class="scroll-arrow" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 5v14M5 12l7 7 7-7"/>
-    </svg>
-  </div>
+  <a href="#about" class="scroll-arrow" aria-label="Przewiń w dół">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/><path d="M11 14l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
 </section>
 
+<!-- About -->
 <section id="about" class="section about">
-  <div class="about-grid container">
-    <div class="about-text reveal">
-      <span class="section-label">O nas</span>
-      <h2 class="section-title">Pielęgnujemy z <span>pasją</span></h2>
-      <p class="section-sub" style="margin-bottom:32px">
-        Salon Urody Róza to miejsce stworzone dla kobiet, które cenią siebie. Od 2016 roku pomagamy naszym klientkom poczuć się pięknie, zrelaksowane i pewnie. Każdy zabieg traktujemy indywidualnie - z uwagą i dbałością o każdy detal.
-      </p>
-
-      <div class="about-features">
-        <div class="about-feature-item">
-          <span class="ico">🌹</span>
-          <div><strong>Doświadczone specjalistki</strong><span>Certyfikowane, z pasją do piękna</span></div>
-        </div>
-        <div class="about-feature-item">
-          <span class="ico">✨</span>
-          <div><strong>Produkty premium</strong><span>Tylko najwyżej oceniane marki</span></div>
-        </div>
-        <div class="about-feature-item">
-          <span class="ico">🕊️</span>
-          <div><strong>Spokój i relaks</strong><span>Atmosfera jak w prywatnym spa</span></div>
-        </div>
-        <div class="about-feature-item">
-          <span class="ico">💛</span>
-          <div><strong>Indywidualne podejście</strong><span>Słuchamy i doradzamy z sercem</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-visual reveal reveal-delay-2">
-      <img
-        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80"
-        alt="Wnętrze Salonu Urody Róza - eleganckie i nowoczesne"
-        class="about-photo"
-        loading="lazy"
-      >
-      <div class="about-badge">
-        <span class="big">4.9</span>
-        <div>
-          <strong>Ocena Google</strong>
-          <small>1 200+ opinii klientek</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section services">
-  <div class="container text-center">
-    <span class="section-label reveal">Nasze Usługi</span>
-    <h2 class="section-title reveal">Co robimy <span>najlepiej?</span></h2>
-    <p class="section-sub reveal">Każdy zabieg wykonujemy z najwyższą starannością i przy użyciu sprawdzonych produktów.</p>
-  </div>
-
-  <div class="services-grid">
-    <article class="service-card reveal">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80" alt="Manicure hybrydowy - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Manicure hybrydowy</h3>
-        <p>Trwały, estetyczny i szybki. Manicure hybrydowy, żelowy i tytanowy - idealny na każdą okazję i w każdym kolorze.</p>
-        <div class="service-footer">
-          <span class="service-price">od 120 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-card reveal reveal-delay-1">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=500&q=80" alt="Pedicure - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Pedicure</h3>
-        <p>Zadbane i piękne stopy przez cały rok. Pedicure klasyczny, hybrydowy i zdrowotny - dla prawdziwego komfortu.</p>
-        <div class="service-footer">
-          <span class="service-price">od 90 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-card reveal reveal-delay-2">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&q=80" alt="Stylizacja brwi - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Stylizacja brwi</h3>
-        <p>Regulacja, henna pudrowa, laminacja brwi. Idealne brwi definiują twarz i wzmacniają naturalne spojrzenie.</p>
-        <div class="service-footer">
-          <span class="service-price">od 80 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-card featured reveal reveal-delay-1">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80" alt="Stylizacja rzęs - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Stylizacja rzęs</h3>
-        <p>Przedłużanie 1:1, 2-3D i mega volume. Lifting i laminacja. Efekt, który zostaje na 4-6 tygodni.</p>
-        <div class="service-footer">
-          <span class="service-price">od 180 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-card reveal reveal-delay-2">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=500&q=80" alt="Makijaż okolicznościowy - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Makijaż okolicznościowy</h3>
-        <p>Dzienny, wieczorowy, ślubny. Smoky eye, glow, naturalne - każdy styl dopasowany do Twojej osobowości.</p>
-        <div class="service-footer">
-          <span class="service-price">od 200 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="service-card reveal reveal-delay-3">
-      <div class="service-img-wrap">
-        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80" alt="Zabiegi na twarz - Salon Urody Róza" loading="lazy">
-      </div>
-      <div class="service-body">
-        <h3>Zabiegi na twarz</h3>
-        <p>Oczyszczanie, mikrodermabrazja, lifting, masaże twarzy. Skóra promienna, odświeżona i pełna blasku.</p>
-        <div class="service-footer">
-          <span class="service-price">od 150 zł</span>
-          <a href="#contact" class="btn-text">Zobacz szczegóły</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section how-it-works">
-  <div class="container text-center">
-    <span class="section-label reveal">Jak to działa?</span>
-    <h2 class="section-title reveal">Twoja wizyta w <span>3 krokach</span></h2>
-    <p class="section-sub reveal">Umów się telefonicznie, przez formularz lub odwiedź nas osobiście.</p>
-  </div>
-
-  <div class="steps-grid">
-    <div class="step-item reveal">
-      <div class="step-num">1</div>
-      <h3>Skontaktuj się z nami</h3>
-      <p>Zadzwoń, napisz lub wypełnij formularz kontaktowy - odpowiemy tak szybko, jak to możliwe.</p>
-    </div>
-    <div class="step-item reveal reveal-delay-1">
-      <div class="step-num">2</div>
-      <h3>Wybierz usługę i termin</h3>
-      <p>Razem dobierzemy zabieg dopasowany do Twoich potrzeb i znajdziemy pasujący termin.</p>
-    </div>
-    <div class="step-item reveal reveal-delay-2">
-      <div class="step-num">3</div>
-      <h3>Ciesz się efektem</h3>
-      <p>Zapraszamy do naszego salonu w Warszawie. Zadbamy o Twój komfort i wyjdziesz z poczuciem, że wyglądasz doskonale.</p>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="section gallery">
-  <div class="container text-center">
-    <span class="section-label reveal">Galeria</span>
-    <h2 class="section-title reveal">Nasze <span>realizacje</span></h2>
-    <p class="section-sub reveal">Zdjęcia mówią więcej niż słowa. Zobacz, co tworzymy każdego dnia.</p>
-  </div>
-
-  <div class="gallery-grid">
-    <div class="gallery-item reveal">
-      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Manicure hybrydowy - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Manicure hybrydowy</span>
-    </div>
-    <div class="gallery-item tall reveal reveal-delay-1">
-      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Stylizacja rzęs - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Stylizacja rzęs</span>
-    </div>
-    <div class="gallery-item reveal reveal-delay-2">
-      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" alt="Stylizacja brwi - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Stylizacja brwi</span>
-    </div>
-    <div class="gallery-item wide reveal reveal-delay-2">
-      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=80" alt="Makijaż ślubny - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Makijaż ślubny</span>
-    </div>
-    <div class="gallery-item reveal reveal-delay-3">
-      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Zabiegi na twarz - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Zabiegi na twarz</span>
-    </div>
-    <div class="gallery-item reveal reveal-delay-4">
-      <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="Pedicure - Salon Urody Róza" loading="lazy">
-      <span class="gallery-label">Pedicure</span>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="section testimonials">
-  <div class="container text-center">
-    <span class="section-label reveal">Opinie</span>
-    <h2 class="section-title reveal">Co mówią nasze <span>klientki?</span></h2>
-    <p class="section-sub reveal">Ponad 1 200 opinii na Google. Dla nas liczy się każdą klientka i każdy efekt.</p>
-  </div>
-
-  <div class="testimonials-inner reveal">
-    <div class="testimonials-track">
-      <div class="testimonials-slider" id="slider">
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Niesamowity salon! Rzesy trzymają się już 6 tygodni i wyglądają jak pierwszego dnia. Obsługa na najwyższym poziomie, wracam regularnie!"</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/52?img=1" alt="Kasia W." class="author-avatar" loading="lazy">
-            <div class="author-info">
-              <strong>Kasia W.</strong>
-              <span>Klientka od 3 lat</span>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label reveal">O nas</div>
+        <h2 class="section-title reveal">Dlaczego <span>MEDICA?</span></h2>
+        <p class="section-sub reveal">Stawiamy na jakość, dostępność i nowoczesne technologie. Twoje zdrowie jest w najlepszych rękach.</p>
+        <div class="about-features reveal">
+          <div class="about-feature-item">
+            <div class="feature-icon">🩺</div>
+            <div>
+              <strong>Doświadczeni specjaliści</strong>
+              <p>Lekarze z wieloletnim stażem i certyfikatami specjalizacji</p>
+            </div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <strong>Szybkie terminy wizyt</strong>
+              <p>Rejestracja online i telefoniczna. Brak wielomiesięcznych kolejek.</p>
+            </div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon">💻</div>
+            <div>
+              <strong>Teleporady bez wychodzenia z domu</strong>
+              <p>Konsultacja z lekarzem przez video bez konieczności wizyty.</p>
+            </div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon">📱</div>
+            <div>
+              <strong>Nowoczesny system rejestracji</strong>
+              <p>Asystent AI działa 24/7 — umawiaj wizyty o każdej porze.</p>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Paznokcie przepiękne, obsługa cudowna, miła atmosfera. Wracam na pewno i zabieram ze sobą koleżanki!"</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/52?img=5" alt="Natalia K." class="author-avatar" loading="lazy">
-            <div class="author-info">
-              <strong>Natalia K.</strong>
-              <span>Klientka od 2 lat</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Efekty mówią same za siebie. Zdjecia paznokci zebrały mnóstwo komplementów! Jakość wykonania jest po prostu niesamowita."</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/52?img=9" alt="Ola M." class="author-avatar" loading="lazy">
-            <div class="author-info">
-              <strong>Ola M.</strong>
-              <span>Stala klientka</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Zabieg na twarz to mistrzostwo! Skóra świetlista i odswiezona jak nigdy. Zero bolu, maksimum efektu. Profesjonalizm na piątkę."</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/52?img=20" alt="Agnieszka B." class="author-avatar" loading="lazy">
-            <div class="author-info">
-              <strong>Agnieszka B.</strong>
-              <span>Klientka od roku</span>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-
-    <div class="slider-dots" id="sliderDots">
-      <button class="slider-dot active" data-index="0" aria-label="Opinia 1"></button>
-      <button class="slider-dot" data-index="1" aria-label="Opinia 2"></button>
-      <button class="slider-dot" data-index="2" aria-label="Opinia 3"></button>
-      <button class="slider-dot" data-index="3" aria-label="Opinia 4"></button>
-    </div>
-
-    <div class="slider-nav">
-      <button class="slider-btn" id="sliderPrev" aria-label="Poprzednia">&#8592;</button>
-      <button class="slider-btn" id="sliderNext" aria-label="Nastepna">&#8594;</button>
+      <div class="about-visual reveal">
+        <div class="about-stats-card">
+          <div class="asc-header">
+            <div class="asc-icon">📊</div>
+            <div class="asc-title">Statystyki MEDICA</div>
+          </div>
+          <div class="asc-row">
+            <span class="asc-label">Zadowoleni pacjenci</span>
+            <span class="asc-value">98%</span>
+          </div>
+          <div class="asc-bar"><div class="asc-fill" style="width:98%"></div></div>
+          <div class="asc-row">
+            <span class="asc-label">Czas oczekiwania &lt;48h</span>
+            <span class="asc-value">95%</span>
+          </div>
+          <div class="asc-bar"><div class="asc-fill" style="width:95%"></div></div>
+          <div class="asc-row">
+            <span class="asc-label">Skuteczność teleporad</span>
+            <span class="asc-value">92%</span>
+          </div>
+          <div class="asc-bar"><div class="asc-fill" style="width:92%"></div></div>
+          <div class="asc-badges">
+            <span class="asc-badge">✓ ISO 9001</span>
+            <span class="asc-badge">✓ NFZ</span>
+            <span class="asc-badge">✓ RODO</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Specjalizacje -->
+<section id="specjalizacje" class="section services">
+  <div class="container">
+    <div class="section-label reveal">Specjalizacje</div>
+    <h2 class="section-title reveal">Nasi <span>specjaliści</span></h2>
+    <p class="section-sub reveal">Kompleksowa opieka medyczna pod jednym dachem.</p>
+    <div class="specialty-grid">
+      <div class="specialty-card reveal">
+        <div class="scard-icon">🩺</div>
+        <h3>Internista</h3>
+        <p>Diagnostyka i leczenie chorób wewnętrznych dorosłych. Profilaktyka i medycyna ogólna.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+      <div class="specialty-card reveal">
+        <div class="scard-icon">👶</div>
+        <h3>Pediatra</h3>
+        <p>Kompleksowa opieka nad dziećmi i młodzieżą od urodzenia do 18. roku życia.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+      <div class="specialty-card reveal">
+        <div class="scard-icon">🦴</div>
+        <h3>Ortopeda</h3>
+        <p>Leczenie schorzeń układu ruchu, stawów, kości i mięśni. Rehabilitacja.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+      <div class="specialty-card reveal">
+        <div class="scard-icon">🔬</div>
+        <h3>Dermatolog</h3>
+        <p>Diagnostyka i leczenie chorób skóry, włosów i paznokci. Dermatoskopia.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+      <div class="specialty-card reveal">
+        <div class="scard-icon">🤱</div>
+        <h3>Ginekolog</h3>
+        <p>Opieka ginekologiczna, ciążowa i profilaktyczna. USG ginekologiczne.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+      <div class="specialty-card reveal">
+        <div class="scard-icon">🫀</div>
+        <h3>Kardiolog</h3>
+        <p>Diagnostyka i leczenie chorób serca i układu krążenia. EKG, ECHO serca.</p>
+        <a href="#terminy" class="btn-text">Zobacz terminy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Terminy wizyt -->
+<section id="terminy" class="section terminy">
+  <div class="container">
+    <div class="section-label reveal">Rejestracja</div>
+    <h2 class="section-title reveal">Dostępne <span>terminy</span></h2>
+    <p class="section-sub reveal">Rezerwuj online. Potwierdzenie SMS i e-mail.</p>
+    <div class="appointments-list reveal">
+      <div class="appt-row">
+        <div class="appt-icon">🩺</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Marek Wiśniewski</span>
+          <span class="appt-spec">Internista</span>
+        </div>
+        <div class="appt-date">30 mar 2026</div>
+        <div class="appt-time">10:30</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">🩺</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Marek Wiśniewski</span>
+          <span class="appt-spec">Internista</span>
+        </div>
+        <div class="appt-date">31 mar 2026</div>
+        <div class="appt-time">14:00</div>
+        <span class="appt-type teleporada">Teleporada</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">👶</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Anna Kowalska</span>
+          <span class="appt-spec">Pediatra</span>
+        </div>
+        <div class="appt-date">30 mar 2026</div>
+        <div class="appt-time">11:00</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">👶</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Anna Kowalska</span>
+          <span class="appt-spec">Pediatra</span>
+        </div>
+        <div class="appt-date">01 kwi 2026</div>
+        <div class="appt-time">09:30</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">🦴</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Piotr Nowak</span>
+          <span class="appt-spec">Ortopeda</span>
+        </div>
+        <div class="appt-date">31 mar 2026</div>
+        <div class="appt-time">13:00</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">🦴</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Piotr Nowak</span>
+          <span class="appt-spec">Ortopeda</span>
+        </div>
+        <div class="appt-date">01 kwi 2026</div>
+        <div class="appt-time">15:30</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">🦴</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Piotr Nowak</span>
+          <span class="appt-spec">Ortopeda</span>
+        </div>
+        <div class="appt-date">02 kwi 2026</div>
+        <div class="appt-time">10:00</div>
+        <span class="appt-type teleporada">Teleporada</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+      <div class="appt-row">
+        <div class="appt-icon">🫀</div>
+        <div class="appt-doc">
+          <span class="appt-name">dr Katarzyna Zielińska</span>
+          <span class="appt-spec">Kardiolog</span>
+        </div>
+        <div class="appt-date">02 kwi 2026</div>
+        <div class="appt-time">12:00</div>
+        <span class="appt-type stacjonarna">Stacjonarna</span>
+        <button class="btn-reserve" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Zarezerwuj</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cennik -->
 <section id="pricing" class="section pricing">
-  <div class="container text-center">
-    <span class="section-label reveal">Cennik</span>
-    <h2 class="section-title reveal">Przejrzysty <span>cennik</span></h2>
-    <p class="section-sub reveal">Żadnych ukrytych kosztów. Ceny orientacyjne - dokładną wycenę ustalamy indywidualnie.</p>
-  </div>
-
-  <div class="pricing-grid">
-    <div class="pricing-card reveal">
-      <h3>Dłonie</h3>
-      <div class="pricing-rows">
-        <div class="pricing-row"><span>Manicure hybrydowy</span><span>od 120 zł</span></div>
-        <div class="pricing-row"><span>Manicure żelowy</span><span>od 150 zł</span></div>
-        <div class="pricing-row"><span>Manicure tytanowy</span><span>od 180 zł</span></div>
-        <div class="pricing-row"><span>Zdobienia nail art</span><span>od 20 zł</span></div>
-        <div class="pricing-row"><span>Uzupełnienie hybrydy</span><span>od 100 zł</span></div>
+  <div class="container">
+    <div class="section-label reveal">Cennik</div>
+    <h2 class="section-title reveal">Wybierz swój <span>pakiet</span></h2>
+    <p class="section-sub reveal">Przejrzyste ceny, brak ukrytych kosztów.</p>
+    <div class="pricing-pkgs">
+      <div class="pricing-pkg reveal">
+        <div class="pkg-name">Standard</div>
+        <div class="pkg-price">od 200 zł <span>/ wizyta</span></div>
+        <ul class="pkg-features">
+          <li>✓ Wizyty stacjonarne u specjalistów</li>
+          <li>✓ Podstawowe badania laboratoryjne</li>
+          <li>✓ Dostęp do systemu rejestracji online</li>
+          <li>✓ Rejestracja telefoniczna 8-18</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Wybierz pakiet</a>
       </div>
-    </div>
-
-    <div class="pricing-card reveal reveal-delay-1">
-      <h3>Stopy</h3>
-      <div class="pricing-rows">
-        <div class="pricing-row"><span>Pedicure klasyczny</span><span>od 90 zł</span></div>
-        <div class="pricing-row"><span>Pedicure hybrydowy</span><span>od 120 zł</span></div>
-        <div class="pricing-row"><span>Pedicure zdrowotny</span><span>od 130 zł</span></div>
+      <div class="pricing-pkg featured reveal">
+        <div class="pkg-badge">Polecamy</div>
+        <div class="pkg-name">Komfort</div>
+        <div class="pkg-price">od 399 zł <span>/ miesiąc</span></div>
+        <ul class="pkg-features">
+          <li>✓ Wszystko z pakietu Standard</li>
+          <li>✓ Teleporady bez limitu</li>
+          <li>✓ Priorytetowe terminy (max 48h)</li>
+          <li>✓ Pakiet badań profilaktycznych</li>
+          <li>✓ Asystent AI 24/7</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Wybierz pakiet</a>
       </div>
-    </div>
-
-    <div class="pricing-card reveal reveal-delay-2">
-      <h3>Rzęsy i brwi</h3>
-      <div class="pricing-rows">
-        <div class="pricing-row"><span>Rzęsy 1:1 classic</span><span>od 180 zł</span></div>
-        <div class="pricing-row"><span>Rzęsy 2-3D volume</span><span>od 220 zł</span></div>
-        <div class="pricing-row"><span>Lifting rzęs</span><span>od 130 zł</span></div>
-        <div class="pricing-row"><span>Laminacja brwi</span><span>od 100 zł</span></div>
-        <div class="pricing-row"><span>Henna pudrowa</span><span>od 80 zł</span></div>
-      </div>
-    </div>
-
-    <div class="pricing-card reveal reveal-delay-3">
-      <h3>Makijaż i twarz</h3>
-      <div class="pricing-rows">
-        <div class="pricing-row"><span>Makijaż okolicznościowy</span><span>od 200 zł</span></div>
-        <div class="pricing-row"><span>Makijaż ślubny</span><span>od 350 zł</span></div>
-        <div class="pricing-row"><span>Oczyszczanie twarzy</span><span>od 150 zł</span></div>
-        <div class="pricing-row"><span>Mikrodermabrazja</span><span>od 180 zł</span></div>
-        <div class="pricing-row"><span>Lifting twarzy</span><span>od 220 zł</span></div>
+      <div class="pricing-pkg reveal">
+        <div class="pkg-name">Premium</div>
+        <div class="pkg-price">od 799 zł <span>/ miesiąc</span></div>
+        <ul class="pkg-features">
+          <li>✓ Wszystko z pakietu Komfort</li>
+          <li>✓ Dedykowany opiekun medyczny</li>
+          <li>✓ Pełny pakiet badań (morfologia, EKG, USG)</li>
+          <li>✓ Wizyty domowe na życzenie</li>
+          <li>✓ Priorytet 24/7 — termin tego samego dnia</li>
+          <li>✓ Raport zdrowotny co kwartał</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Wybierz pakiet</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="faq" class="section faq">
-  <div class="container text-center">
-    <span class="section-label reveal">FAQ</span>
-    <h2 class="section-title reveal">Masz <span>pytania?</span></h2>
-    <p class="section-sub reveal">Zebraliśmy najczęściej zadawane pytania. W razie wątpliwości zapraszamy do kontaktu.</p>
-  </div>
-
-  <div class="faq-list">
-    <div class="faq-item reveal">
-      <button class="faq-question" aria-expanded="false">
-        Jak umówić wizytę?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Wizytę możesz umówić telefonicznie, przez e-mail lub wypełniając formularz kontaktowy na stronie. Odezwiemy się tak szybko, jak to możliwe, aby potwierdzić termin.</p>
+<!-- Zespół -->
+<section id="team" class="section team">
+  <div class="container">
+    <div class="section-label reveal">Zespół</div>
+    <h2 class="section-title reveal">Poznaj naszych <span>lekarzy</span></h2>
+    <p class="section-sub reveal">Doświadczeni specjaliści gotowi zadbać o Twoje zdrowie.</p>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-avatar">MW</div>
+        <h3 class="team-name">dr Marek Wiśniewski</h3>
+        <div class="team-spec">Internista</div>
+        <p class="team-bio">Specjalista chorób wewnętrznych z 15-letnim doświadczeniem. Ekspert w diagnostyce i profilaktyce.</p>
       </div>
-    </div>
-
-    <div class="faq-item reveal reveal-delay-1">
-      <button class="faq-question" aria-expanded="false">
-        Jak długo trzymają się rzęsy?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Przy dobrym pielęgnowaniu rzęsy trzymają się 4-6 tygodni. Zalecamy uzupełnienie po 3-4 tygodniach, aby efekt był zawsze perfekcyjny.</p>
+      <div class="team-card reveal">
+        <div class="team-avatar">AK</div>
+        <h3 class="team-name">dr Anna Kowalska</h3>
+        <div class="team-spec">Pediatra</div>
+        <p class="team-bio">Pediatra z pasją do pracy z dziećmi. 12 lat praktyki, certyfikaty polskie i europejskie.</p>
       </div>
-    </div>
-
-    <div class="faq-item reveal reveal-delay-2">
-      <button class="faq-question" aria-expanded="false">
-        Ile kosztuje manicure hybrydowy?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Manicure hybrydowy zaczyna się od 120 zł. Zdobienia, wzorki i efekty specjalne są wyceniane indywidualnie. W razie pytań zapraszamy do kontaktu.</p>
+      <div class="team-card reveal">
+        <div class="team-avatar">PN</div>
+        <h3 class="team-name">dr Piotr Nowak</h3>
+        <div class="team-spec">Ortopeda</div>
+        <p class="team-bio">Ortopeda i traumatolog. Specjalista leczenia urazów, artroskopii i chirurgii stawów.</p>
       </div>
-    </div>
-
-    <div class="faq-item reveal reveal-delay-3">
-      <button class="faq-question" aria-expanded="false">
-        Czy mogę odwołać lub przełożyć wizytę?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Oczywiście! Wizytę możesz odwołać lub przełożyć do 24 godzin przed terminem. Napisz do nas lub zadzwoń - zawsze znajdziemy rozwiązanie.</p>
-      </div>
-    </div>
-
-    <div class="faq-item reveal reveal-delay-4">
-      <button class="faq-question" aria-expanded="false">
-        Jakie produkty stosujecie?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Pracujemy wyłącznie z produktami premium: Kodi Professional, NeoNail, Lash Lift &amp; Tint, Dermalogica i innych certyfikowanych marek. Bezpieczeństwo i jakość to nasz priorytet.</p>
-      </div>
-    </div>
-
-    <div class="faq-item reveal reveal-delay-4">
-      <button class="faq-question" aria-expanded="false">
-        Czy oferujecie zabiegi dla grup?
-        <span class="faq-arrow">▼</span>
-      </button>
-      <div class="faq-answer">
-        <p>Tak! Oferujemy pakiety dla par, wieczory panieńskie i grupowe eventy beauty. Skontaktuj się z nami przez formularz lub telefonicznie - przygotujemy ofertę dopasowaną do Twoich potrzeb.</p>
+      <div class="team-card reveal">
+        <div class="team-avatar">KZ</div>
+        <h3 class="team-name">dr Katarzyna Zielińska</h3>
+        <div class="team-spec">Kardiolog</div>
+        <p class="team-bio">Kardiolog interwencyjny z 10-letnim stażem. Ekspert diagnostyki EKG i echokardiografii.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <h2>Zadbaj o siebie <em>już dziś</em></h2>
-  <p>Zarezerwuj termin i oddaj się w ręce naszych specjalistek. Czekamy na Ciebie w Salonie Urody Róza.</p>
-  <div class="cta-actions">
-    <a href="#contact" class="btn btn-white">Umów wizytę online</a>
-    <a href="tel:+48000000000" class="btn btn-outline">Zadzwoń do nas</a>
+<!-- Jak to działa -->
+<section class="section how-it-works">
+  <div class="container">
+    <div class="section-label reveal">Proces</div>
+    <h2 class="section-title reveal">Wizyta w <span>3 krokach</span></h2>
+    <p class="section-sub reveal">Prosto, szybko, bezpiecznie.</p>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">1</div>
+        <h3>Wybierz specjalizację</h3>
+        <p>Skorzystaj z asystenta AI lub formularza. Dobierzemy idealnego specjalistę dla Twoich potrzeb.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">2</div>
+        <h3>Wybierz termin wizyty</h3>
+        <p>Przeglądaj dostępne terminy i wybierz godzinę pasującą do Twojego planu dnia.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">3</div>
+        <h3>Potwierdź i przyjedź</h3>
+        <p>Otrzymasz potwierdzenie SMS i e-mail. Czekamy na Ciebie w MEDICA.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Agent AI -->
+<section id="agent" class="section agent-section">
+  <div class="container">
+    <div class="agent-grid">
+      <div class="agent-left">
+        <div class="section-label reveal">Asystent AI</div>
+        <h2 class="section-title reveal">Twój inteligentny <span>asystent medyczny</span></h2>
+        <p class="reveal">Asystent AI MEDICA działa 24 godziny na dobę, 7 dni w tygodniu. Odpowie na Twoje pytania, pomoże dobrać specjalistę i umówi wizytę.</p>
+        <ul class="agent-features reveal">
+          <li><span class="af-icon">🕐</span> Dostępny 24/7 — bez kolejek, bez oczekiwania</li>
+          <li><span class="af-icon">🩺</span> Pomaga dobrać specjalistę do objawów</li>
+          <li><span class="af-icon">📅</span> Sprawdza dostępne terminy i rezerwuje</li>
+          <li><span class="af-icon">📞</span> Zbiera dane kontaktowe i przesyła do rejestracji</li>
+          <li><span class="af-icon">🔒</span> Bezpieczny i zgodny z RODO</li>
+        </ul>
+        <button class="btn btn-primary reveal" onclick="(function(){var w=document.querySelector('[data-kontaktio-toggle]');if(w)w.click();else{var b=document.querySelector('kontaktio-widget');if(b&&b.open)b.open();}})()">Porozmawiaj z asystentem</button>
+      </div>
+      <div class="agent-right reveal">
+        <div class="chat-mockup">
+          <div class="chat-header">
+            <div class="chat-avatar">🤖</div>
+            <div>
+              <div class="chat-name">Asystent MEDICA</div>
+              <div class="chat-status">● Online</div>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="chat-msg bot">Witaj! Jestem asystentem MEDICA. Jak mogę Ci pomóc?</div>
+            <div class="chat-msg user">Chciałbym umówić wizytę do internisty.</div>
+            <div class="chat-msg bot">Oczywiście! Mamy wolne terminy u dr. Wiśniewskiego: jutro 10:30 lub pojutrze 14:00. Który preferujesz?</div>
+            <div class="chat-msg user">Jutro 10:30.</div>
+            <div class="chat-msg bot">Świetnie! Podaj proszę imię, nazwisko i numer telefonu, a potwierdzę rezerwację. 📅</div>
+          </div>
+          <div class="chat-input-row">
+            <input class="chat-input" type="text" placeholder="Napisz wiadomość..." disabled>
+            <button class="chat-send" disabled>➤</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <div class="section-label reveal">Opinie</div>
+    <h2 class="section-title reveal">Co mówią nasi <span>pacjenci?</span></h2>
+    <p class="section-sub reveal">Ponad 5 000 pacjentów obdarzyło nas zaufaniem.</p>
+    <div class="slider-wrapper reveal">
+      <div id="slider" class="slider">
+        <div class="testimonial-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Profesjonalna obsługa i brak kolejek to coś, czego szukałam. Dr Kowalska jest niesamowita, moje dzieci ją uwielbiają."</p>
+          <div class="tc-author">
+            <div class="tc-avatar">A</div>
+            <div>
+              <strong>Anna, 34 lata</strong>
+              <span>Pacjentka od 2 lat</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Teleporada przeszła moje oczekiwania. W 15 minut dostałam receptę i skierowanie. Rewelacja!"</p>
+          <div class="tc-author">
+            <div class="tc-avatar">T</div>
+            <div>
+              <strong>Tomasz, 45 lat</strong>
+              <span>Pacjent od roku</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Asystent AI umówił mi wizytę o 23:00 w niedzielę. Następnego dnia byłam u lekarza. Niesamowite!"</p>
+          <div class="tc-author">
+            <div class="tc-avatar">M</div>
+            <div>
+              <strong>Marta, 28 lat</strong>
+              <span>Nowa pacjentka</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Pakiet Premium to najlepsza inwestycja w zdrowie. Dedykowany opiekun wie o moich chorobach więcej niż ja."</p>
+          <div class="tc-author">
+            <div class="tc-avatar">K</div>
+            <div>
+              <strong>Krzysztof, 58 lat</strong>
+              <span>Pacjent Premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <button id="sliderPrev" class="slider-arrow" aria-label="Poprzednia opinia">&#8592;</button>
+        <div class="slider-dots">
+          <button class="slider-dot active" data-index="0" aria-label="Opinia 1"></button>
+          <button class="slider-dot" data-index="1" aria-label="Opinia 2"></button>
+          <button class="slider-dot" data-index="2" aria-label="Opinia 3"></button>
+          <button class="slider-dot" data-index="3" aria-label="Opinia 4"></button>
+        </div>
+        <button id="sliderNext" class="slider-arrow" aria-label="Następna opinia">&#8594;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
 <section id="contact" class="section contact">
-  <div class="contact-grid container">
-    <div class="contact-info reveal">
-      <span class="section-label">Kontakt</span>
-      <h2>Odwiedź nas<br>lub napisz!</h2>
-
-      <div style="margin-top:28px">
-        <div class="contact-detail">
-          <div class="ico-wrap">📍</div>
-          <div>
-            <strong>Adres</strong>
-            <p>ul. Różana 12, 00-001 Warszawa<br>(Śródmieście, obok metra Centrum)</p>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label reveal">Kontakt</div>
+        <h2 class="reveal">Odwiedź nas<br>lub napisz!</h2>
+        <div class="contact-details reveal">
+          <div class="contact-detail">
+            <span class="cd-icon">📍</span>
+            <span>ul. Piotrkowska 84, 90-102 Łódź<br><small>Centrum, obok Galerii Łódzkiej</small></span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📞</span>
+            <a href="tel:+48000000000">+48 000 000 000</a>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📧</span>
+            <a href="mailto:rejestracja@medica-lodz.pl">rejestracja@medica-lodz.pl</a>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📱</span>
+            <a href="https://instagram.com/medicaLodz" target="_blank" rel="noopener">@medicaLodz</a>
           </div>
         </div>
-        <div class="contact-detail">
-          <div class="ico-wrap">📞</div>
-          <div>
-            <strong>Telefon</strong>
-            <p><a href="tel:+48000000000" style="color:var(--gold);font-weight:600">+48 000 000 000</a></p>
-          </div>
+        <div class="opening-hours reveal">
+          <h4>Godziny otwarcia</h4>
+          <table>
+            <tr><td>Pon-Pt</td><td>08:00–20:00</td></tr>
+            <tr><td>Sobota</td><td>09:00–15:00</td></tr>
+            <tr><td>Niedziela</td><td><span class="closed">Zamknięte</span></td></tr>
+          </table>
         </div>
-        <div class="contact-detail">
-          <div class="ico-wrap">📧</div>
-          <div>
-            <strong>E-mail</strong>
-            <p><a href="mailto:hello@salonurodyroza.pl" style="color:var(--gold);font-weight:600">hello@salonurodyroza.pl</a></p>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="ico-wrap">📱</div>
-          <div>
-            <strong>Instagram</strong>
-            <p><a href="#" style="color:var(--gold);font-weight:600">@salonurodyroza</a></p>
-          </div>
+        <div class="contact-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d78199.37946815754!2d19.457216!3d51.759445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a348b2f0f2bcb%3A0x15c2c6f07e2ca97e!2sL%C3%B3d%C5%BA%2C%20Poland!5e0!3m2!1sen!2spl!4v1711638000000!5m2!1sen!2spl"
+            width="100%" height="220" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokalizacja MEDICA Łódź"></iframe>
         </div>
       </div>
-
-      <div class="opening-hours">
-        <h4>Godziny otwarcia</h4>
-        <div class="hours-row"><strong>Pon-Pt</strong><span class="open">09:00-20:00</span></div>
-        <div class="hours-row"><strong>Sobota</strong><span class="open">10:00-18:00</span></div>
-        <div class="hours-row"><strong>Niedziela</strong><span class="closed">Zamknięte</span></div>
-      </div>
-
-      <div class="map-wrap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d78199.37946815754!2d21.012228!3d52.229676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccb9f52b9a57%3A0xf7c09c21d5eaa0ca!2sWarsaw%2C%20Poland!5e0!3m2!1sen!2spl!4v1711638000000!5m2!1sen!2spl"
-          width="100%"
-          height="220"
-          style="border:0;border-radius:16px;margin-top:24px"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Lokalizacja Salonu Urody Róza - Warszawa Śródmieście"
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="contact-form reveal reveal-delay-2">
-      <span class="section-label">Formularz</span>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--brown);margin-bottom:28px">Umów wizytę</h3>
-
-      <form id="contactForm" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Imię</label>
-            <input type="text" id="fname" name="fname" placeholder="Twoje imię" required autocomplete="given-name">
+      <div class="contact-form-wrap reveal">
+        <div class="section-label">Formularz</div>
+        <h3>Umów wizytę</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Imię</label>
+              <input type="text" id="f-name" name="imie" placeholder="Twoje imię" required>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Telefon</label>
+              <input type="tel" id="f-phone" name="telefon" placeholder="+48 000 000 000" required>
+            </div>
           </div>
           <div class="form-group">
-            <label for="phone">Telefon</label>
-            <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" autocomplete="tel">
+            <label for="f-email">E-mail</label>
+            <input type="email" id="f-email" name="email" placeholder="adres@email.pl" required>
           </div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="twoj@email.pl" required autocomplete="email">
-        </div>
-
-        <div class="form-group">
-          <label for="service">Usługa</label>
-          <select id="service" name="service">
-            <option value="">- Wybierz usługę -</option>
-            <option>Manicure hybrydowy</option>
-            <option>Manicure żelowy / tytanowy</option>
-            <option>Pedicure</option>
-            <option>Stylizacja rzęs 1:1</option>
-            <option>Stylizacja rzęs 2-3D Volume</option>
-            <option>Lifting rzęs</option>
-            <option>Stylizacja brwi</option>
-            <option>Laminacja brwi</option>
-            <option>Makijaż okolicznościowy</option>
-            <option>Makijaż ślubny</option>
-            <option>Zabiegi na twarz</option>
-            <option>Inna / zapytanie</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Preferowany termin i uwagi</label>
-          <textarea id="message" name="message" placeholder="Preferowany termin, pytania, uwagi..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
-          Wyślij zapytanie
-        </button>
-      </form>
+          <div class="form-group">
+            <label for="f-spec">Specjalizacja</label>
+            <select id="f-spec" name="specjalizacja" required>
+              <option value="" disabled selected>Wybierz specjalizację...</option>
+              <option>Internista</option>
+              <option>Pediatra</option>
+              <option>Ortopeda</option>
+              <option>Dermatolog</option>
+              <option>Ginekolog</option>
+              <option>Kardiolog</option>
+              <option>Teleporada ogólna</option>
+              <option>Inne / zapytanie</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Preferowany termin i uwagi</label>
+            <textarea id="f-msg" name="uwagi" rows="4" placeholder="Podaj preferowany termin lub opisz swoje potrzeby..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Wyślij zapytanie</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
-  <div class="footer-top">
+  <div class="footer-top container">
     <div class="footer-brand">
-      <div class="logo"><span>Salon Urody</span><strong>Róza</strong></div>
-      <p>Profesjonalny salon beauty w Warszawie. Manicure, rzęsy, brwi, makijaż i zabiegi pielęgnacyjne.</p>
+      <div class="logo"><span>Przychodnia</span><strong>MEDICA</strong></div>
+      <p>Nowoczesna przychodnia w Łodzi. Internista, pediatra, ortopeda, dermatolog, ginekolog, kardiolog.</p>
     </div>
     <div class="footer-col">
-      <h5>Usługi</h5>
-      <a href="#services">Manicure hybrydowy</a>
-      <a href="#services">Pedicure</a>
-      <a href="#services">Stylizacja rzęs</a>
-      <a href="#services">Stylizacja brwi</a>
-      <a href="#services">Makijaż</a>
-      <a href="#services">Zabiegi na twarz</a>
+      <h4>Specjalizacje</h4>
+      <ul>
+        <li><a href="#specjalizacje">Internista</a></li>
+        <li><a href="#specjalizacje">Pediatra</a></li>
+        <li><a href="#specjalizacje">Ortopeda</a></li>
+        <li><a href="#specjalizacje">Dermatolog</a></li>
+        <li><a href="#specjalizacje">Ginekolog</a></li>
+        <li><a href="#specjalizacje">Kardiolog</a></li>
+      </ul>
     </div>
     <div class="footer-col">
-      <h5>Informacje</h5>
-      <a href="#about">O nas</a>
-      <a href="#pricing">Cennik</a>
-      <a href="#testimonials">Opinie</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Kontakt</a>
-      <a href="https://kontaktio.pl">Powered by Kontaktio</a>
+      <h4>Informacje</h4>
+      <ul>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#testimonials">Opinie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="https://kontaktio.pl" target="_blank" rel="noopener">Kontaktio</a></li>
+      </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Salon Urody Róza - Strona demonstracyjna</p>
-    <a href="https://kontaktio.pl">Powered by <strong>Kontaktio</strong></a>
+    <span>© 2026 Przychodnia MEDICA — Strona demonstracyjna</span>
+    <span>Powered by <a href="https://kontaktio.pl" target="_blank" rel="noopener">Kontaktio</a></span>
   </div>
 </footer>
 
-<div class="stickyBar" id="stickyBar" aria-hidden="true">
-  <div class="stickyBar__content">
-    <b>Zainteresowany? Zobacz inne branże</b>
-    <span>Każda ma gotowego asystenta AI dopasowanego do klientów.</span>
-    <a class="stickyBtn" href="https://kontaktio.pl">Powrót do Kontaktio</a>
+<!-- Sticky Bar -->
+<div id="stickyBar" class="sticky-bar" role="complementary" aria-hidden="true" aria-live="polite">
+  <div class="sticky-content">
+    <span class="sticky-icon">🏥</span>
+    <div class="sticky-text">
+      <strong>Zainteresowany?</strong> Tworzymy strony + AI dla firm medycznych.
+      <span class="sticky-sub">Każda klinika może mieć własnego asystenta AI.</span>
+    </div>
   </div>
-  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">x</button>
+  <div class="sticky-actions">
+    <a href="https://kontaktio.pl" target="_blank" rel="noopener" class="btn btn-primary sticky-cta">Powrót do Kontaktio</a>
+    <button id="stickyClose" class="sticky-close" aria-label="Zamknij">&times;</button>
+  </div>
 </div>
 
-<a href="#contact" class="mobile-cta-fixed" aria-label="Umów wizytę">Umów wizytę</a>
+<!-- Mobile CTA Fixed -->
+<a href="#contact" class="mobile-cta-fixed">Umów wizytę</a>
 
+<!-- Agent Script -->
 <script
   src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@8a6ebea/kontaktio.js"
   data-kontaktio
-  data-client="PinkHeaven"
+  data-client="medica"
   data-backend="https://chatbot-backend-x2cy.onrender.com"
 ></script>
 
